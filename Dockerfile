@@ -1,7 +1,7 @@
 FROM assembla/ubuntu
 MAINTAINER Artiom Di <kron82@gmail.com>
 
-RUN apt-get install --no-install-recommends git mercurial bzr
+RUN apt-get install --no-install-recommends -y git mercurial bzr
 RUN mkdir -p /goroot /gopath
 ENV GOROOT /goroot
 ENV GOPATH /gopath
